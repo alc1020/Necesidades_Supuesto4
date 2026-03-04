@@ -11,3 +11,9 @@ Desarrollo de herramientas para la ayuda de niños o niñas con problemas de exp
 
 
 ## Introducción
+
+
+## trabajo
+-hacer un mockup (una demo muy sencilla en una pagina de como quedaria el proyecto)
+-hacer el trabajo en un word/presentacion 
+-coger pictogramas de ejemplo de araasac
