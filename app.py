@@ -38,7 +38,7 @@ def seleccionar_picto(nombre, emoji):
 
 # Pantalla de Inicio
 if st.session_state.pantalla == "inicio":
-    st.title("¿Qué quieres decir? 🗣️")
+    st.title("¿Qué quieres decir? ")
     
     # Mostrar la frase actual que se está construyendo
     if st.session_state.frase:
@@ -51,21 +51,21 @@ if st.session_state.pantalla == "inicio":
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        if st.button("👤\nYO"):
+        if st.button("\nYO"):
             st.session_state.pantalla = "yo"
             st.rerun()
     with col2:
-        if st.button("😊\nEMOCIONES"):
+        if st.button("\nEMOCIONES"):
             st.session_state.pantalla = "emociones"
             st.rerun()
     with col3:
-        if st.button("🏠\nCASA"):
+        if st.button("\nCASA"):
             st.session_state.pantalla = "casa"
             st.rerun()
 
 # Pantalla: Yo
 elif st.session_state.pantalla == "yo":
-    st.title("👤 Categoría: Yo")
+    st.title("Categoría: Yo")
     cols = st.columns(3)
     
     opciones = [("Niño", "👦"), ("Niña", "👧"), ("Hambre", "🍕"), ("Sed", "💧")]
@@ -82,7 +82,7 @@ elif st.session_state.pantalla == "yo":
 
 # Pantalla: Emociones
 elif st.session_state.pantalla == "emociones":
-    st.title("😊 ¿Cómo te sientes?")
+    st.title("¿Cómo te sientes?")
     cols = st.columns(3)
     
     emociones = [("Feliz", "😄"), ("Triste", "😢"), ("Enfadado", "😡"), ("Cansado", "😴")]
