@@ -574,4 +574,4 @@ st.markdown(
     "ComunicApp · Supuesto 4 · Necesidades del Paciente · "
     "Grado en Ingeniería de la Salud · Universidad de Burgos</p>",
     unsafe_allow_html=True,
-)s
+)
