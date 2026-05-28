@@ -4,18 +4,6 @@ Población: Niños/niñas con problemas de expresión oral
 Objetivo: Incluir pictogramas, palabras y/o frases para facilitar
           la comunicación en contextos escolares y/o familiares.
 
-ESTRUCTURA DE CARPETAS ESPERADA:
-  pictogramas/
-    emociones/
-      contento.png
-      triste.jpg
-      ...
-    casa/
-      cama.png
-      ...
-    lugares/
-      parque.png
-      ...
 
 La app detecta automáticamente las subcarpetas como categorías
 y los archivos de imagen dentro como pictogramas.
@@ -148,7 +136,7 @@ def mostrar_picto(picto: dict, img_size: int, key: str):
 # ── Sidebar: configuración ───────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("## ⚙️ Configuración")
-
+    
     ruta_pictos = st.text_input(
         "📁 Ruta a la carpeta de pictogramas",
         value="pictogramas",
@@ -160,7 +148,7 @@ with st.sidebar:
             "  /home/ana/pictogramas"
         ),
     )
-
+    
     if st.button("🔄 Recargar pictogramas"):
         st.cache_data.clear()
         st.rerun()
